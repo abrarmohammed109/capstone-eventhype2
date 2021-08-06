@@ -32,6 +32,29 @@ const renderData = (data) => {
         <img src= '${data._embedded.events[i].images[8].url}' width='300' height='200'>
         <h3>${data._embedded.events[i].name}</h3>
         <p> Date: ${data._embedded.events[i].dates.start.localDate}</p>
+
+        <form action='/submit' method='POST'>
+
+            <div class='userEntry'>
+                <input
+                    type='text'
+                    name='username'
+                    placeholder='Your Name'
+                />
+            </div>
+
+            <div class='userEntry'>
+                <textarea 
+                    name='comments'
+                    id=''
+                    cols='60'
+                    rows='20'
+                    placeholder='Post your comments here!'
+                ></textarea>
+            </div>
+            <input type='submit' value='Submit' class='submitButton' />
+        </form>
+
         <hr></hr>
         `
     }
