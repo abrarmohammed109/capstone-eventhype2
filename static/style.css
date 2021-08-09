@@ -1,0 +1,11 @@
+h1{
+    
+    box-shadow: 0 2px 2px rgba(0,0,0, 0.30);
+    color: black;
+    font-weight: 600;
+    font-size: 120%;
+    background: whitesmoke;
+    padding: 0.7em;
+    text-align: center;
+    
+}
