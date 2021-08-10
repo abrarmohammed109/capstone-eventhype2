@@ -26,4 +26,8 @@ h1{
     box-shadow:0 10px 10px 0 gray;
   }
 
+  h1{
+      text-align: center;
+  }
+
  

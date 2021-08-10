@@ -3,7 +3,7 @@ mainPage = document.getElementById('main')
 const getData = async (data) => {
     
     try{
-    const response = await fetch('https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&locale=*&page=100'
+    const response = await fetch('https://app.ticketmaster.com/discovery/v2/events?apikey=7elxdku9GGG5k8j0Xm8KWdANDgecHMV0&locale=*&page=150'
     )
     const data = await response.json()
     console.log(data)

@@ -7,7 +7,7 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
@@ -15,7 +15,7 @@ if ENV == 'dev':
 
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = ''
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://sredfwbtrejqrr:968b0c425f1089b27e889607f64dbb72476ccdb2308bb2c8dd4d865003e967d5@ec2-44-196-44-90.compute-1.amazonaws.com:5432/d726sfebpk4bcr(capstone-eventhype2)'
 
 app.config['SQLALCHEMY_TRACK_MODIFACTIONS'] = False
 
